@@ -5,7 +5,7 @@
 
 
 
-function merge <T, O>(objA: T, objB: O): T & O  {
+function merge <T extends Record<string, any>>(objA: T, objB: T): T   {
   return Object.assign({}, objA, objB);
 }
 

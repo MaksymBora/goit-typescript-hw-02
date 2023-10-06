@@ -5,9 +5,9 @@
 
 
 
-function getPromise<T>(): Promise<T[]> {
+function getPromise():  Promise<Array<string | number>> {
   return new Promise((resolve) => {
-    resolve(['Text', 50] as T[])
+    resolve(['Text', 50])
   })
 }
 
